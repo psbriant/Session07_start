@@ -1,4 +1,6 @@
 import datetime
+from passlib.context import CryptContext
+password_context = CryptContext(schemes=['pbkdf2_sha512'])
 from sqlalchemy import (
     Column,
     DateTime,
@@ -51,6 +53,8 @@ class Entry(Base):
 
 # The User class will allow us to authenticate users
 class User(Base):
+    def verify_password(self, password):
+        return password_context.verify(password, self.password)
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True, autoincrement=True)
     name = Column(Unicode(255), unique=True, nullable=False)

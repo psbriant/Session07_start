@@ -1,24 +1,8 @@
-* {
-	cursor: url("ghost-3.gif"), auto}
 body{
-    color:#fff;
+    color:#111;
     padding:0;
     margin:0;
-    background-color: #111;
-	background-image: url("spooky_background.gif");
-	background-repeat: no-repeat;
-	background-position: center center}
-p {
-	font-family: cedarville-cursive;
-	color: #fff}
-ul {
-	font-family: cedarville-cursive;
-	color: #fff}
-a {
-	font-family: cedarville-cursive;
-	color: #cc0101}
-a:visited, ul:visited{
-	color: #850000}
+    background-color: #eee;}
 header{
     margin:0;
     padding:0 0.75em;
@@ -26,13 +10,6 @@ header{
     background: #222;
     color: #ccc;
     border-bottom: 3px solid #fff;}
-h1{
-	font-family: creepster;
-	color: #cc0101;
-	text-align: center;}
-h2 {
-	font-family: creepster;
-	color: #cc0101;}
 header:after{
     content:"";
     display:table;
@@ -46,7 +23,7 @@ footer a:hover {
 }
 header a:visited,
 footer a:visited {
-    color:#fff;
+    color:#eee;
 }
 header aside{
     float:right;
@@ -91,6 +68,6 @@ main aside .control_row input{
 footer{
     padding: 1em 0.75em;
     background: #222;
-    color: #fff;
+    color: #ccc;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;}
